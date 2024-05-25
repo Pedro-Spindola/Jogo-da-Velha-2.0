@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h2 class="placar">Placar</h2>
+            <div class="menu">
+                <div class="jogador1">
+                    <h2 class="box-pontos pontosP1" id="pontosP1">0</h2>
+                    <h2 class="nomeP1" id="nomeP1"></h2>
+                </div>
+                <h2 class="vs">VS</h2>
+                <div class="jogador2">
+                    <h2 class="box-pontos pontosP2" id="pontosP2">0</h2>
+                    <h2 class="nomeP2" id="nomeP2"></h2>
+                </div>
+            </div><!--Menu Pontos-->
+            <div class="box-gamer">
+                <button data-i="1"></button>
+                <button data-i="2"></button>
+                <button data-i="3"></button>
+                <button data-i="4"></button>
+                <button data-i="5"></button>
+                <button data-i="6"></button>
+                <button data-i="7"></button>
+                <button data-i="8"></button>
+                <button data-i="9"></button>
+            </div> <!--Tela do jogo-->
+            <h2 id="txtQuemJoga" class="placar">Vez do jogador 01</h2>
+        </section>  <!--Tela Completa-->
+    </main>
+
+    <div class="popup">
+        <div class="modal">
+            <input type="text" name="nameJogador1" placeholder="Nome do Jogador 01">
+            <input type="text" name="nameJogador2" placeholder="Nome do Jogador 02">
+            <input type="button" name="conf" value="Ok">
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
+</body>
+</html>

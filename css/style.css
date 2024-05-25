@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+body
+{
+    background-color: #1f2024;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: #F2F2F2;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    display: flex;
+    width: 400px;
+    height: 540px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.placar{
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    max-height: 20px;
+    font-size: 18px;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+.jogador1, .jogador2, .vs{
+    width: calc(100% / 3);
+}
+.vs{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.jogador1, .jogador2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-pontos{
+    color: #1f2024;
+    font-weight: bold;
+    margin: 10px;
+    width: 48px;
+    text-align: center;
+    align-content: center;
+    height: 48px;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.pontosP1{
+    background-color: #27d5e3;
+}
+.pontosP2{
+    background-color: #ff62dc;
+}
+.nomeP1, .nomeP2{
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+}
+.box-gamer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 306px;
+    height: 306px;
+    background-color: #F2F2F2;
+    margin: 10px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.box-gamer button{
+    background-color: #1f2024;
+    border: none;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popup
+{
+    background-color: rgba(0, 22, 28, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.modal
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin: 10% auto;
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #acb1b3;
+    
+    
+}
+.modal input[name=nameJogador1],
+.modal input[name=nameJogador2]
+{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    align-items: start;
+    justify-content: flex-start;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.modal input[name=corJogador1],
+.modal input[name=corJogador2]
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.modal input[name=conf]
+{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
